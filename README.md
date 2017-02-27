@@ -15,13 +15,13 @@ Vanilla Javascript (jQuery hopefully coming soon)
 - To practice CSS and SMACSS design principles.
 
 ## Phases
-- 1. Create buttons that would actually generate the grocery lists when a recipe is selected. (complete)
-- 2. Allow multiple recipes to display on the same page, but not show the same recipe more than one time. (in progress)
-- 3. Combine ingredients from multiple recipes into the same food item - for example, if Recipe 1 calls for 3 carrots and Recipe 2 calls for 5 carrots, the list should read "8 carrots", not two lines with 3 and 5 carrots, respectivly. 
-- 4. Segment the full recipe list by ingredient categories, based on where they would be in a grocery store. Ex: Produce, dairy, canned goods, bread, etc.
-- 5. Make the ap visually pleasing and responsive, since the user will likely be using it on a phone. Measure of success?: I should be able to send this to my non-technical runner friend and have her use it happily at the store.
+1. Create buttons that would actually generate the grocery lists when a recipe is selected. (complete)
+2. Allow multiple recipes to display on the same page, but not show the same recipe more than one time. (in progress)
+3. Combine ingredients from multiple recipes into the same food item - for example, if Recipe 1 calls for 3 carrots and Recipe 2 calls for 5 carrots, the list should read "8 carrots", not two lines with 3 and 5 carrots, respectivly. 
+4. Segment the full recipe list by ingredient categories, based on where they would be in a grocery store. Ex: Produce, dairy, canned goods, bread, etc.
+5. Make the ap visually pleasing and responsive, since the user will likely be using it on a phone. Measure of success?: I should be able to send this to my non-technical runner friend and have her use it happily at the store.
 
 ## Possible Eventual Stretch Goals
-- 1. Sort recipes by vegetarian, meat, pasta, etc.
-- 2. Include recommended weekly meal plans with the recipes
-- 3. Allow users to search by ingredients, to find recipes they could use based on existing items in their fridge
+1. Sort recipes by vegetarian, meat, pasta, etc.
+2. Include recommended weekly meal plans with the recipes
+3. Allow users to search by ingredients, to find recipes they could use based on existing items in their fridge

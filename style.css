@@ -111,12 +111,17 @@ button {
 
 /* SHOPPING LIST */
 main ul {
-
+    
 }
 
 main li {
     font-family: 'Rock Salt';
     line-height: 140%;
+}
+
+/*this doesn't work*/
+main ul .selection:checked {
+    text-decoration: line-through;
 }
 
 /* KEELEY BIO */

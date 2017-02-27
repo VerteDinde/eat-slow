@@ -19,6 +19,7 @@ elBC.addEventListener('click', clickedBC);
 function clickedBC(event) {
   event.preventDefault();
   broccoliChevreSoup.generateShoppingList();
+  selectedRecipes.push(broccoliChevreSoup);
 }
 
 var elSHM = document.getElementById('superhero-muffins');
@@ -27,6 +28,7 @@ elSHM.addEventListener('click', clickedSHM);
 function clickedSHM(event) {
   event.preventDefault();
   superHeroMuffins.generateShoppingList();
+  selectedRecipes.push(superHeroMuffins);
 }
 
 var elSausageM = document.getElementById('sausage-minestrone');
@@ -35,6 +37,7 @@ elSausageM.addEventListener('click', clickedSausageM);
 function clickedSausageM(event) {
   event.preventDefault();
   sausageMinestrone.generateShoppingList();
+  selectedRecipes.push(sausageMinestrone);
 }
 
 var elVeggieFR = document.getElementById('veggie-fried-rice');
@@ -43,6 +46,7 @@ elVeggieFR.addEventListener('click', clickedVeggieFR);
 function clickedVeggieFR(event) {
   event.preventDefault();
   veggieFriedRice.generateShoppingList();
+  selectedRecipes.push(veggieFriedRice);
 }
 
 // RECIPES: Add new recipe here
@@ -96,16 +100,18 @@ Recipe.prototype.generateShoppingList = function() {
     ingredient.textContent = this.ingredients[i];
     recipeList.appendChild(ingredient);
 
-    var checkbox = document.createElement("input");
-    checkbox.type = "checkbox";    // make the element a checkbox
-    checkbox.name = "slct[]";      // give it a name we can check on the server side
+    var checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';    // make the element a checkbox
+    checkbox.name = 'slct[]';      // give it a name we can check on the server side
+    checkbox.className += 'selection';
     ingredient.prepend(checkbox);
+
+    // if (this.checked) {
+    //   $(input).css('textDecoration', 'line-through');
+    // } else {
+    //   $(input).css('textDecoration', 'none');
+    // }
   }
 
   //run through ingredients array
 };
-
-// broccoliChevreSoup.generateShoppingList();
-// superHeroMuffins.generateShoppingList();
-// sausageMinestrone.generateShoppingList();
-// veggieFriedRice.generateShoppingList();

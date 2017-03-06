@@ -49,6 +49,15 @@ function clickedVeggieFR(event) {
   selectedRecipes.push(veggieFriedRice);
 }
 
+var elSweetSour = document.getElementById('sweet-sour-chicken');
+elSweetSour.addEventListener('click', clickedSweetSour);
+
+function clickedSweetSour(event) {
+  event.preventDefault();
+  sweetSourChicken.generateShoppingList();
+  selectedRecipes.push(sweetSourChicken);
+}
+
 // RECIPES: Add new recipe here
 
 var broccoliChevreSoup = new Recipe('Broccoli Chevre Soup', [
@@ -82,10 +91,17 @@ var veggieFriedRice = new Recipe('Veggie Fried Rice', [
   '4 cups brown rice', 'soy sauce', '2 eggs',
 ], 1);
 
+var sweetSourChicken = new Recipe('Sweet and Sour Chicken', [
+  'Chicken thighs', '15 oz canned pineapple', '2 green bell peppers',
+  '1 yellow onion', 'green onions', 'Sweet/sour sauce',
+], 1);
+allRecipes.push(sweetSourChicken);
+
 // END RECIPES
 
-//generate shopping list
-
+// Generates shopping list
+// Function is a prototype method of the Recipe constructor
+// Adds ingredients checklist to the DOM
 Recipe.prototype.generateShoppingList = function() {
   var recipeList = document.getElementById('recipes');
   var recipeName = document.createElement('h2');

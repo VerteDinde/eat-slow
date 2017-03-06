@@ -122,6 +122,7 @@ Recipe.prototype.generateShoppingList = function() {
     checkbox.className += 'selection';
     ingredient.prepend(checkbox);
 
+    // checkedIngredient()'
     // if (this.checked) {
     //   $(input).css('textDecoration', 'line-through');
     // } else {
@@ -131,3 +132,12 @@ Recipe.prototype.generateShoppingList = function() {
 
   //run through ingredients array
 };
+
+function checkedIngredient() {
+  if (checkbox === checked) {
+    previousUser.classList.add('selection:checked');
+  }
+  if (checkbox !== checked) {
+    currentUser.classList.remove('selection:checked');
+  }
+}

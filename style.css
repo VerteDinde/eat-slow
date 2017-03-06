@@ -12,7 +12,7 @@ header {
 nav {
     width: 901px;
     margin: 0 auto;
-    vertical-align: middle; /*I don't think this does anything */
+    vertical-align: middle;
 }
 
 nav:after {
@@ -116,7 +116,6 @@ main li {
     line-height: 140%;
 }
 
-/*this doesn't work*/
 main ul .selection:checked {
     text-decoration: line-through;
 }

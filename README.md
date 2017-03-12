@@ -4,10 +4,11 @@ I started a Javascript bootcamp with Code Fellows in February of 2017. In order 
 
 This inspired a simple, fun side project - what if I could build an app that would let us pick from our favorite recipes, autogenerate a shopping list and let us check off those items at the grocery store in real time as my husband and I divided and conquered? Thus, the "Eat Slow" grocery list generator was born.
 
-## Tech Specs:
-HTML
-CSS
-Vanilla Javascript (possible with jQuery, but trying not to use it)
+## Tech Stack:
+* HTML
+* CSS
+* Javascript
+* jQuery
 
 ## Goals
 - To build something fun and simple that I would actually use.

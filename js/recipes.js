@@ -3,6 +3,7 @@
 var recipes = [
   {
     name: 'Broccoli Chevre Soup',
+    recipeID: 'broccoli-soup',
     ingredients: [
       'unsalted butter', 'yellow onion', '2 carrots',
       'sea salt', '3 cloves garlic', '4 cups veggie broth',
@@ -12,6 +13,7 @@ var recipes = [
   },
   {
     name: 'Superhero Muffins',
+    recipeID: 'superhero-muffins',
     ingredients: [
       'almond meal', 'rolled oats', 'cinnamon',
       'nutmeg', 'baking soda', 'sea salt',
@@ -23,6 +25,7 @@ var recipes = [
   },
   {
     name: 'Sausage Minestrone',
+    recipeID: 'sausage-minestrone',
     ingredients: [
       '1 lb spicy Italian sausage', '3 ribs celery', '3 carrots',
       '1 yellow onion', '3 cloves garlic', 'oregano',
@@ -34,6 +37,7 @@ var recipes = [
   },
   {
     name: 'Veggie Fried Rice',
+    recipeID: 'veggie-rice',
     ingreidents: [
       'Saffron oil', '2 cloves garlic', 'ginger',
       'red pepper flakes', '6 cups chopped vegetables', 'sea salt',
@@ -43,10 +47,12 @@ var recipes = [
   },
   {
     name: 'Sweet and Sour Chicken',
+    recipeID: 'sweet-sour-chicken',
     ingredients: [
       'Chicken thighs', '15 oz canned pineapple', '2 green bell peppers',
       '1 yellow onion', 'green onions', 'Sweet/sour sauce',
     ],
+    quantity: 1,
   }
 ];
 

@@ -23,7 +23,7 @@ elBC.addEventListener('click', clickedBC);
 
 function clickedBC(event) {
   event.preventDefault();
-  broccoliChevreSoup.generateShoppingList();
+  .generateShoppingList();
   selectedRecipes.push(broccoliChevreSoup);
 }
 

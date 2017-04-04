@@ -6,13 +6,18 @@ var selectedRecipes = [];
 //check to see if a recipe is already selected in the event listener
 //how to let someone unselect a recipe? splice or slice?
 
-function Recipe(name, ingredients, quantity) {
-  this.name = name;
-  this.ingredients = ingredients;
-  this.quantity = quantity;
+function Recipe(recipes) {
+  this.name = recipes.name;
+  this.ingredients = recipes.ingredients;
+  this.quantity = recipes.quantity;
 }
 
+recipes.forEach(function(i){
+  allRecipes.push(new Recipe(i));
+});
+
 //buttons for dinner selections
+//generateShoppingList() functions won't work with the code refactored
 var elBC = document.getElementById('broccoli-chevre');
 elBC.addEventListener('click', clickedBC);
 
@@ -58,47 +63,6 @@ function clickedSweetSour(event) {
   selectedRecipes.push(sweetSourChicken);
 }
 
-// RECIPES: Add new recipe here
-
-var broccoliChevreSoup = new Recipe('Broccoli Chevre Soup', [
-  'unsalted butter', 'yellow onion', '2 carrots',
-  'sea salt', '3 cloves garlic', '4 cups veggie broth',
-  '2 heads broccoli', '1 bay leaf', 'black pepper',
-  'tahini', '4 oz chevre'], '1');
-allRecipes.push(broccoliChevreSoup);
-
-var superHeroMuffins = new Recipe('Superhero Muffins', [
-  'almond meal', 'rolled oats', 'cinnamon',
-  'nutmeg', 'baking soda', 'sea salt',
-  'walnuts', 'chocolate chips', '3 eggs',
-  '1 zucchini', '2 carrots', 'unsalted butter',
-  'maple syrup', 'vanilla extract'
-], 1);
-allRecipes.push(superHeroMuffins);
-
-var sausageMinestrone = new Recipe('Sausage Minestrone', [
-  '1 lb spicy Italian sausage', '3 ribs celery', '3 carrots',
-  '1 yellow onion', '3 cloves garlic', 'oregano',
-  'sea salt', '8 cups veggie broth', '3 zucchini',
-  '14 oz diced tomatoes', '14 oz cannelli beans', '3 cups penne',
-  'Parmesan'
-], 1);
-allRecipes.push(sausageMinestrone);
-
-var veggieFriedRice = new Recipe('Veggie Fried Rice', [
-  'Saffron oil', '2 cloves garlic', 'ginger',
-  'red pepper flakes', '6 cups chopped vegetables', 'sea salt',
-  '4 cups brown rice', 'soy sauce', '2 eggs',
-], 1);
-
-var sweetSourChicken = new Recipe('Sweet and Sour Chicken', [
-  'Chicken thighs', '15 oz canned pineapple', '2 green bell peppers',
-  '1 yellow onion', 'green onions', 'Sweet/sour sauce',
-], 1);
-allRecipes.push(sweetSourChicken);
-
-// END RECIPES
-
 // Generates shopping list
 // Function is a prototype method of the Recipe constructor
 // Adds ingredients checklist to the DOM
@@ -132,12 +96,3 @@ Recipe.prototype.generateShoppingList = function() {
 
   //run through ingredients array
 };
-
-function checkedIngredient() {
-  if (checkbox === checked) {
-    previousUser.classList.add('selection:checked');
-  }
-  if (checkbox !== checked) {
-    currentUser.classList.remove('selection:checked');
-  }
-}

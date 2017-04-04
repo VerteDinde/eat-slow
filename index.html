@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Eat Slow: A Meal Plan App for Runners</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <title="Grocer-Whee!"></title>
@@ -10,8 +11,8 @@
         <nav>
             <div class="logo">
                 <div class="inline-text">
-                    <h1 class="inline">Grocer-Whee!</h1>
-                    <p class="subheader">A meal plan grocery list app</p>
+                    <h1 class="inline">Eat Slow</h1>
+                    <p class="subheader">A meal plan grocery list app for runners</p>
                 </div>
             </div>
             <ul>
@@ -31,16 +32,16 @@
         <h2>Dinner Shopping List</h2>
         <p>Ready to go shopping for dinner? Just select which recipes you want to make below:</p>
         <div class="line-break"></div>
-        <section class="recipe-options">
-            <button id="broccoli-chevre">Broccoli Chevre</button>
-            <button id="superhero-muffins">Superhero Muffins</button>
-            <button id="sausage-minestrone">Sausage Minestrone</button>
-            <button id="veggie-fried-rice">Veggie Fried Rice</button>
-            <button id='sweet-sour-chicken'>Sweet and Sour Chicken</button>
+        <section class="recipe-options clearfix">
+            <div class="recipe-select" id="broccoli-chevre">Broccoli Chevre</div>
+            <div class="recipe-select" id="superhero-muffins">Superhero Muffins</div>
+            <div class="recipe-select" id="sausage-minestrone">Sausage Minestrone</div>
+            <div class="recipe-select" id="veggie-fried-rice">Veggie Fried Rice</div>
+            <div class="recipe-select" id='sweet-sour-chicken'>Sweet and Sour Chicken</div>
         </section>
         <ul id="recipes"></ul>
         <ul id="shopping-list"></ul>
-    <div class="heart-break"></div>
+    <div class="line-break"></div>
     <section class="author-bio">
         <div class="author">
             <img class="author" src="img/keeley-pic.jpg">
@@ -49,13 +50,13 @@
                 <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
             </div>
         </div>
-        <button class="button">Share Recipe</button>
         </section>
     </main>
     <footer>
-        <p>GrocerWhee &copy; 2017 - Open License</p>
+        <p>Eat Slow Meal App &copy; 2017 - Open License</p>
         <p>A side project by Keeley Hammond</p>
     </footer>
-    <script src="app.js"></script>
+    <script src="js/recipes.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
